@@ -1,0 +1,296 @@
+
+/*progess bar */
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    33% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    66% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes bounce {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    33% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    66% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+/*progress-bar setup end*/
+
+/*input field*/
+.sfwpGeneralInput {
+    width: 200px;
+}
+
+/* Tooltip */
+.wpfbmbTooltip {
+    display:none;
+    position:absolute;
+    border:1px solid #333;
+    background-color:#161616;
+    border-radius:5px;
+    padding:10px;
+    color:#fff;
+    font-size:12px;
+}
+
+
+
+
+
+
+
+        /* ===============================================
+			||										    ||
+			||		 Facebook messenger bot setting     ||
+			||										    ||
+		    ===============================================
+		*/
+
+
+/*==================Tab Design=======================*/
+
+p {
+    color: #222;
+}
+
+.wpfbmb-fb-messenger-bot-tabs {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    /*bottom: 50px;*/
+
+}
+
+.wpfbmb-fb-messenger-bot-tabs:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.wpfbmb-fb-messenger-bot-tabs li {
+    float: left;
+    width: 20%;
+    display: block;
+    border: 2px solid #CCC;
+}
+
+.wpfbmb-fb-messenger-bot-tabs .wpfbmb-fb-messenger-bot-tab-input {
+    position: absolute;
+    top:auto;
+    left: -9999px;
+    /*overflow: hidden;*/
+}
+
+.wpfbmb-fb-messenger-bot-tabs-name {
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2CC185;
+}
+
+.wpfbmb-fb-messenger-bot-tabs-name:hover {
+    background: #2CC185;
+    color: white;
+}
+
+.wpfbmb-fb-messenger-bot-tabs .wpfbmb-fb-messenger-bot-tab-content {
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 0.9rem;
+    /*line-height: 5px;*/
+    /*padding: 5px;*/
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border: 2px solid #CCC;
+}
+
+.wpfbmb-fb-messenger-bot-tabs [id^="tab"]:checked + label {
+    background: #2CC185;
+    color: white;
+}
+
+.wpfbmb-fb-messenger-bot-tabs [id^="tab"]:checked ~ [id^="wpfbmb-fb-messenger-bot-tab-content"] {
+    display: block;
+}
+
+/* Feed manage save button*/
+.wpfbmb-btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding:10px 64px 10px 64px;;
+    border: solid #2b698f 3px;
+    text-decoration: none;
+}
+
+.wpfbmb-btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+
+/*
+---------------------------------------------------------
+|
+|
+|
+|                       Option page design
+|
+|
+|
+-----------------------------------------------------------
+ */
+
+
+
+
+/*saving success alert message*/
+.wpfbmb-save-success-alert-message{
+    font-size: 14px;
+    padding-right: 10px;
+    display: none;
+    font-weight: bold;
+    color: green;
+}
+
+/*saving error alert message*/
+.wpfbmb-save-error-alert-message{
+    font-size: 14px;
+    padding-right: 10px;
+    display: none;
+    font-weight: bold;
+    color: red;
+}
+/*clipboard copy success messsage*/
+
+.wpfbmb-copy-clipboard-sucess-message{
+    font-size: 14px;
+    padding-left: 10px;
+    display: none;
+    font-weight: bold;
+    color: green;
+}
+.wpfbmb-shortcode-button{
+    padding: 4px 10px;
+    background: green;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+
+
+/*enable /disable switch*/
+
+ .wpfbmb_switch_en_dis {
+     position: relative;
+     display: inline-block;
+     width: 60px;
+     height: 34px;
+ }
+
+.wpfbmb_switch_en_dis .wpfbmb_switch_input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.wpfbmb_switch_en_dis_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.wpfbmb_switch_en_dis_slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.wpfbmb_switch_en_dis .wpfbmb_switch_input:checked + .wpfbmb_switch_en_dis_slider {
+    background-color: #2196F3;
+}
+
+.wpfbmb_switch_en_dis .wpfbmb_switch_input:focus + .wpfbmb_switch_en_dis_slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.wpfbmb_switch_en_dis .wpfbmb_switch_input:checked + .wpfbmb_switch_en_dis_slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.wpfbmb_switch_en_dis_slider.wpfbmb_switch_en_dis_round {
+    border-radius: 34px;
+}
+
+.wpfbmb_switch_en_dis_slider.wpfbmb_switch_en_dis_round:before {
+    border-radius: 50%;
+}

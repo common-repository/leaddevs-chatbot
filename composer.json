@@ -1,0 +1,21 @@
+{
+    "name": "leaddevs/messenger",
+    "description": "Facebook messenger live chat",
+    "type": "plugin",
+    "authors": [
+        {
+            "name": "Najmul Ahmed",
+            "email": "dev.najmul@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-session": "*",
+        "ext-json": "*",
+        "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leaddevs\\WPFBMessenger\\": "src/"
+        }
+    }
+}
